@@ -109,9 +109,11 @@ namespace JVFloatSharp
 			{
 				_floatingLabel.TextColor = FloatingLabelTextColor;
 
-				if (string.IsNullOrEmpty(Text))
-				{
+				if (string.IsNullOrEmpty(Text)) {
 					hideFloatingLabel();
+				}
+				else {
+					showFloatingLabel();
 				}
 			}
 		}
