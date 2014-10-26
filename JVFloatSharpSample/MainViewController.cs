@@ -6,6 +6,7 @@ namespace JVFloatSharpSample
 {
 	public class MainViewController : UIViewController
 	{
+        const float JVTextViewHeight = 100.0f;
 		const float JVFieldHeight = 44.0f;
 		const float JVFieldHMargin = 10.0f;
 		const float JVFieldFontSize = 16.0f;
@@ -85,10 +86,10 @@ namespace JVFloatSharpSample
 			};
 			View.AddSubview(div3);
 
-			var descriptionField = new JVFloatLabeledTextField(new RectangleF(JVFieldHMargin, 
+            var descriptionField = new JVFloatLabeledTextView(new RectangleF(JVFieldHMargin, 
 			                                                                  div3.Frame.Y + div3.Frame.Size.Height,
 			                                                                  View.Frame.Size.Width - 2 * JVFieldHMargin, 
-			                                                                  JVFieldHeight))
+                                                                              JVTextViewHeight))
 			{
 				Placeholder = "Description",
 				Font = UIFont.SystemFontOfSize(JVFieldFontSize),
